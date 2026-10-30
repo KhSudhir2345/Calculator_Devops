@@ -4,6 +4,9 @@ pipeline {
         DOCKER_USER = 'sudhirkh4'
         IMAGE_NAME = "${DOCKER_USER}/calculator-api"
         IMAGE_TAG = "${env.BUILD_NUMBER}"
+
+        JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
+        PATH = "${JAVA_HOME}/bin:${env.PATH}"
     }
     stages {
         stage('Checkout') {
