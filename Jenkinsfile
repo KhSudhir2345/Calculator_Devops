@@ -59,5 +59,3 @@ pipeline {
         }
     }
 }
-
-//Added a comment.
